@@ -39,7 +39,13 @@ class _HomeAndroidState extends State<HomeAndroid> {
             },
             itemBuilder: (context) => [
               PopupMenuItem(
-                child: const Text('Cadastro'),
+                child: const Text('Cadastre-se'),
+                onTap: () {
+                  Navigator.pushNamed(context, 'cadastro_user');
+                },
+              ),
+              PopupMenuItem(
+                child: const Text('Cadastro de Hotel'),
                 onTap: () {
                   Navigator.pushNamed(context, 'cadastro');
                 },
